@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dynamically typed or statically</title>
+  </head>
+  <body>
+    <h1>Javascript is dynamically typed lang.</h1>
+    <h1>It checks all the types at run time.(When program is executing)</h1>
+    <h1>so we can assign anything to variable and its fine</h1>
+    <h1>See console</h1>
+    <h1>
+      The type of myVariable starts as undefined. When a string is assigned, its
+      type becomes string. When a number is assigned, its type changes to
+      number. When a boolean is assigned, its type changes to boolean.
+    </h1>
+    <script>
+      // Declare a variable without specifying its type
+      let myVariable;
+      console.log(myVariable);
+      // Assign a string to the variable
+      myVariable = "Hello, World!";
+      console.log(myVariable); // Output: Hello, World!
+      console.log(typeof myVariable); // Output: string
+
+      // Assign a number to the same variable
+      myVariable = 42;
+      console.log(myVariable); // Output: 42
+      console.log(typeof myVariable); // Output: number
+
+      // Assign a boolean to the same variable
+      myVariable = true;
+      console.log(myVariable); // Output: true
+      console.log(typeof myVariable); // Output: boolean
+
+      //   myVariable(); Uncaught TypeError: myVariable is not a function
+    </script>
+  </body>
+</html>
